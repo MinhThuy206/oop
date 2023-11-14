@@ -26,7 +26,7 @@ public abstract class AbstractPoly implements Poly {
         }
         for (int i = 0; i <= degree(); i++) {
             if (coefficient(i) != abstractPoly.coefficient(i)) {
-                return true;
+                return false;
             }
         }
         return true;
